@@ -1,4 +1,6 @@
 # Netflix-Data-Analysis
+
+**Live dashboard:** [ananya3283.github.io/Netflix-Data-Analysis](https://ananya3283.github.io/Netflix-Data-Analysis/), an interactive version of this analysis. Filter by type, genre, country and age rating; every figure is computed from `netflix_titles.csv` (`web/scripts/build_data.py`).
 Exploratory data analysis of 8,800+ Netflix titles using Python, Pandas, and Matplotlib.
 
 ## Overview
@@ -45,4 +47,5 @@ The image below combines the main visualizations created during the analysis:
 - Matplotlib
 - Data Interpretation
 
-
+## Web version
+`web/` is a React + TypeScript + Vite app (Tailwind, Recharts, Motion), deployed to GitHub Pages by `.github/workflows/pages.yml`. Rebuild the data with `python web/scripts/build_data.py`, then `cd web && npm install && npm run dev`.
